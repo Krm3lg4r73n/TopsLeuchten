@@ -1,0 +1,136 @@
+html
+{
+	height:100%;
+}
+
+body 
+{
+	background-color: #000000;
+	margin: 0;
+	padding: 0;
+	height: 100%; 
+	font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+}
+
+div#main
+{
+	background: url(img/pattern03.png) repeat;
+	border-style: solid;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-color: #AAAAAA;
+	width: 980px;	
+	margin: auto;
+	min-height: 100%;
+	overflow: hidden;
+	height: 100%;
+	border-collapse: collapse;
+    display: table;
+}
+
+div#content 
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 775px;
+}
+
+div#header
+{
+	background: url(img/title.png) no-repeat;
+	background-position: 50% 0px;
+	width: 100%;
+	height: 130px;
+}
+
+div#textbox
+{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+span.text01
+{
+	color: #FFFFFF;
+	font-size: 28px;
+	line-height: 1.5;
+}
+
+span.text02
+{
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+div#footer 
+{
+	text-align: center;
+	clear: both;
+	width: 100%;
+	margin-bottom: 5px;
+    display : table-row;
+    vertical-align : bottom;
+    height : 1px;
+}
+		
+span#footer
+{
+	color: #777777;
+	font-size: 14px;
+}
+
+a#kontakt
+{
+	color: #777777;
+}
+
+div.filler_25
+{
+	clear: both;
+	width: 100%;
+	height: 25px;
+}
+
+div.filler_50
+{
+	clear: both;
+	width: 100%;
+	height: 50px;
+}
+
+div.filler_100
+{
+	clear: both;
+	width: 100%;
+	height: 100px;
+}
+
+a#link_flag_deu
+{
+	display: block;
+	float: right;
+	text-decoration: none;
+	background: url(img/flag_deu.png) no-repeat;
+	border: 1px solid #AAAAAA;
+	padding: 0px;
+	margin: 5px;
+	width: 50px;
+	height: 25px;
+}
+
+a#link_flag_eng
+{
+	display: block;
+	float: right;
+	text-decoration: none;
+	background: url(img/flag_eng.png) no-repeat;
+	border: 1px solid #AAAAAA;
+	padding: 0px;
+	margin: 5px;
+	width: 50px;
+	height: 25px;
+}	
