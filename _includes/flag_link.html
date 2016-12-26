@@ -1,0 +1,5 @@
+{% if include.locale == "de" %}
+  <a id="link_flag_eng" href="/en/{{ include.path }}" title="Display this page in english"></a>
+{% elsif  include.locale == "en" %}
+  <a id="link_flag_deu" href="/de/{{ include.path }}" title="Diese Seite auf deutsch anzeigen"></a>
+{% endif %}

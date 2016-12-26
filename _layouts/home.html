@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="google-site-verification" content="_R-dbAQExdJvfjmhsKCcatA8FIiX7xfh2-rhZ3i5ebk" />
+	<meta name="keywords" content="topsleuchten, czaplinski, tops, leuchten, lampen, peter" />
+	<meta name="author" content="Czaplinski, David" />
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css">
+
+	<style type="text/css">
+		div.link_left
+		{
+			float: left;
+			width: 384px;
+			height: 384px;
+		}
+
+		div.link_right
+		{
+			float: right;
+			width: 384px;
+			height: 384px;
+		}
+
+		div.link_bottom
+		{
+			clear: both;
+			padding: 42px;
+			padding-top: 49px;
+			width: 691px;
+			height: 152px;
+		}
+
+		a#img_link_inair
+		{
+			display: block;
+			text-decoration: none;
+			background: url(/img/link_in_air.png) no-repeat;
+			border: 1px solid #FFFFFF;
+			padding: 0px;
+			margin: 42px;
+			width: 300px;
+			height: 300px;
+		}
+
+		a#img_link_onground
+		{
+			display: block;
+			text-decoration: none;
+			background: url(/img/link_on_ground.png) no-repeat;
+			border: 1px solid #FFFFFF;
+			padding: 0px;
+			margin: 42px;
+			width: 300px;
+			height: 300px;
+		}
+
+		a#img_link_shorties
+		{
+			display: block;
+			text-decoration: none;
+			background: url(/img/link_shorties.png) no-repeat;
+			border: 1px solid #FFFFFF;
+			padding: 0px;
+			margin: 42px;
+			width: 300px;
+			height: 300px;
+		}
+
+		a#img_link_onwall
+		{
+			display: block;
+			text-decoration: none;
+			background: url(/img/link_on_wall.png) no-repeat;
+			border: 1px solid #FFFFFF;
+			padding: 0px;
+			margin: 42px;
+			width: 300px;
+			height: 300px;
+		}
+
+		a#img_link_bottom
+		{
+			display: block;
+			text-decoration: none;
+			background: url(/img/link_kontakt.png) no-repeat;
+			border: 1px solid #FFFFFF;
+			padding: 0px;
+			margin: 0px;
+			width: 691px;
+			height: 152px;
+		}
+	</style>
+
+	<title>TopsLeuchten</title>
+</head>
+
+<body>
+
+	<div id="main">
+
+		{% include flag_link.html locale=page.locale path="" %}
+
+		<div id="content">
+
+			<div class="filler_50"></div>
+
+			<div id="header"></div>
+
+			<div class="filler_50"></div>
+
+			<div id="textbox">
+				<span class="text01">
+					The beauty of light in life<br/>
+				</span>
+			</div>
+
+			<div class="filler_100"></div>
+
+			<iframe style="border: 1px solid #777777; background: #000000" width="560" height="315" src="//www.youtube.com/embed/oKIU7pJjzPw?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+			<div class="filler_100"></div>
+
+			<div class="link_left">
+				<a id="img_link_onground" href="/{{ page.locale }}/selection_ground.html"></a>
+			</div>
+
+			<div class="link_right">
+				<a id="img_link_inair" href="/{{ page.locale }}/selection_air.html"></a>
+			</div>
+
+			<div class="link_left">
+				<a id="img_link_shorties" href="/{{ page.locale }}/selection_shorties.html"></a>
+			</div>
+
+			<div class="link_right">
+				<a id="img_link_onwall" href="/{{ page.locale }}/selection_wall.html"></a>
+			</div>
+
+			<div class="link_bottom">
+				<a id="img_link_bottom" href="/{{ page.locale }}/contact.html"></a>
+			</div>
+
+			<div class="filler_100"></div>
+		</div><!-- content -->
+
+		{% include footer.html locale=page.locale %}
+
+	</div><!-- main -->
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="topsleuchten, czaplinski, tops, leuchten, lampen, peter" />
+	<meta name="author" content="Czaplinski, David" />
+	<!--<script language="JavaScript" src="scroll.js"></script>-->
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css">    	
+	<style type="text/css">	
+
+	div.window
+	{
+		width: 700px;
+		margin: 60px auto;	
+		padding: 10px;
+		border: 1px solid white;
+		font-size: 20px;
+		background-color: #000000;
+	}
+	
+	a#header
+	{
+    text-decoration: none;
+    display: block;
+		background: url(/img/title_gaestebuch.png) no-repeat;
+		background-position: 50% 0px;
+		width: 100%;
+		height: 130px;
+	}
+	</style>
+	
+    <title>TopsLeuchten - {{ page.title }}</title>
+</head>
+
+<body>
+	<div id="main">		
+	
+    {% include flag_link.html locale=page.locale path="contact.html" %}
+		
+		<div id="content">
+			<div class="filler_50"></div>
+			
+			<a id="header" href="/{{ page.locale }}/"></a>
+			
+			<div class="filler_50"></div>
+			
+			<div id="textbox">
+				<span class="text02">
+          {{ content }}
+					<a id="kontakt" href="mailto:info@topsleuchten.de" style="font-weight: bold;">info@topsleuchten.de</a><br/>
+				</span>
+			</div>
+			
+			<div class="filler_25"></div>
+		
+			<div class="window">
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'TopsLeuchten'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//topsleuchten.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			</div>
+			
+			<div class="filler_50"></div>
+		
+		</div><!-- content -->
+
+		{% include footer.html locale=page.locale %}
+		
+	</div><!-- main -->
+</body>
+
+</html>
