@@ -6,7 +6,7 @@
 	<meta name="author" content="Czaplinski, David" />
     <title>TopsLeuchten - {{ page.title }}</title>
 
-	<link rel="stylesheet" type="text/css" media="screen" href="/style.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/style.css">
 
 	<style type="text/css">
 		a#header
@@ -53,7 +53,7 @@
 			<div class="filler_50"></div>
 
 
-			<a id="header" style="background: url({{ page.title_img }}) no-repeat;" href="/{{ page.locale }}/"></a>
+			<a id="header" style="background: url({{ site.baseurl }}{{ page.title_img }}) no-repeat;" href="{{ site.baseurl }}/{{ page.locale }}/"></a>
 
 
 			<div class="filler_50"></div>
@@ -70,8 +70,8 @@
 
 			{% for leuchte in site.leuchten %}
 			{% if leuchte.category == page.category and leuchte.locale == page.locale %}
-				<a class='leuchte' href='/leuchten/{{ page.locale }}/{{ leuchte.title }}.html'>
-					<img class='leuchte' src='/img/{{ leuchte.img_folder }}/main.jpg' width='200' height='150' />
+				<a class='leuchte' href='{{ site.baseurl }}/leuchten/{{ page.locale }}/{{ leuchte.title }}.html'>
+					<img class='leuchte' src='{{ site.baseurl }}/img/{{ leuchte.img_folder }}/main.jpg' width='200' height='150' />
 					<br/>
 					<span class='name'>{{ leuchte.name }}</span>
 				</a>

@@ -68,7 +68,7 @@
 	<meta name="keywords" content="topsleuchten, czaplinski, tops, leuchten, lampen, peter" />
 	<meta name="author" content="Czaplinski, David" />
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="topsleuchten_style.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}topsleuchten_style.css">
 	<style type="text/css">
 		div#content_top
 		{
@@ -88,7 +88,7 @@
 		
 		a#title
 		{
-			background: url(img/title_small.png) no-repeat;
+			background: url({{ site.baseurl }}img/title_small.png) no-repeat;
       		text-decoration: none;
       		display: block;
 			width: 100%;
@@ -149,7 +149,7 @@
 	
 		a#left
 		{
-			background: url(img/arrow_left_full.png) no-repeat;
+			background: url({{ site.baseurl }}img/arrow_left_full.png) no-repeat;
       		text-decoration: none;
       		display: block;
 			float: left;
@@ -159,7 +159,7 @@
 		
 		div#left
 		{
-			background: url(img/arrow_left_half.png) no-repeat;
+			background: url({{ site.baseurl }}img/arrow_left_half.png) no-repeat;
 			float: left;
 			width: 38px;
 			height: 100px;
@@ -168,7 +168,7 @@
 	
 		a#right
 		{
-			background: url(img/arrow_right_full.png) no-repeat;
+			background: url({{ site.baseurl }}img/arrow_right_full.png) no-repeat;
       		text-decoration: none;
       		display: block;
       		position: relative;
@@ -180,7 +180,7 @@
 		
 		div#right
 		{
-			background: url(img/arrow_right_half.png) no-repeat;
+			background: url({{ site.baseurl }}img/arrow_right_half.png) no-repeat;
       		position: relative;
 			left: 738px;
 			top: 0px; 
@@ -247,8 +247,8 @@
 			<div id="content_top">
 			
 				<div id="content_top_left">
-					<a id="title" href="/leuchte_auswahl.jsp?art=<%= art %>"></a>
-					<img id="leuchte_haupt" src="<%= leuchte.getImgUrl() %>main.jpg" width="300" height="225" /> <br/>
+					<a id="title" href="{{ site.baseurl }}/leuchte_auswahl.jsp?art=<%= art %>"></a>
+					<img id="leuchte_haupt" src="<%= leuchte.getImgurl({{ site.baseurl }}) %>main.jpg" width="300" height="225" /> <br/>
 				</div>
 				
 				<div id="content_top_middle"></div>
@@ -297,9 +297,9 @@
 							for (LeuchteDetail detail : details)
 							{
 								out.println("<a class='thumb' href='#' onclick='setImage(\"" + 
-											leuchte.getImgUrl() + detail.getImg() + "\"); return false;'>");
-								out.println("<div class='thumb'><div class='thumb_img' style='background-image: url(" + 
-											leuchte.getImgUrl() + "thumb_" + detail.getImg() + 
+											leuchte.getImgurl({{ site.baseurl }}) + detail.getImg() + "\"); return false;'>");
+								out.println("<div class='thumb'><div class='thumb_img' style='background-image: url({{ site.baseurl }}" + 
+											leuchte.getImgurl({{ site.baseurl }}) + "thumb_" + detail.getImg() + 
 											");'></div></div>" );
 								out.println("<span class='thumb'>" + detail.getName() + "</span>");
 								out.println("</a>");
@@ -318,7 +318,7 @@
 								if (makingOf)
 								{
 									out.println("<a class='thumb' href='" + "?id=" + id + "'>");
-									out.println("<div class='thumb'><div class='thumb_img' style='background-image: url(" + 
+									out.println("<div class='thumb'><div class='thumb_img' style='background-image: url({{ site.baseurl }}" + 
 												"/img/return.png" +
 												");'></div></div>" );
 									out.println("<span class='thumb'>Zurück</span>");
@@ -327,7 +327,7 @@
 								else
 								{
 									out.println("<a class='thumb' href='" + "?id=" + (id+1000l) + "'>");
-									out.println("<div class='thumb'><div class='thumb_img' style='background-image: url(" + 
+									out.println("<div class='thumb'><div class='thumb_img' style='background-image: url({{ site.baseurl }}" + 
 												"/img/making_of.png" +
 												");'></div></div>" );
 									out.println("<span class='thumb'>Making Of</span>");
@@ -368,8 +368,8 @@
 						if(!viewDetailList.isEmpty())
 						{
 							LeuchteDetail viewDetail = viewDetailList.get(0);
-							out.println("<div id='content_bottom_img' style='background-image: url(" + 
-										leuchte.getImgUrl() + viewDetail.getImg() + 
+							out.println("<div id='content_bottom_img' style='background-image: url({{ site.baseurl }}" + 
+										leuchte.getImgurl({{ site.baseurl }}) + viewDetail.getImg() + 
 										");'></div>" );
 						}
 					%>
@@ -379,7 +379,7 @@
 			<div class="filler_50"></div>
 			
 			<div id="footer">
-				<span id="footer">&copy; TopsLeuchten 2011 - <a id="kontakt" href="/kontakt.jsp">Kontakt &amp; Gästebuch</a></span><br/>
+				<span id="footer">&copy; TopsLeuchten 2011 - <a id="kontakt" href="{{ site.baseurl }}/kontakt.jsp">Kontakt &amp; Gästebuch</a></span><br/>
 				<hr style="background-color:#777777; height:1px; width:700px; text-align:center; margin-bottom:0px; margin-top:10px;" />
 				<span id="footer" style="font-size:8pt;">Webseitengestaltung &amp; -entwicklung: D. Czaplinski.&nbsp;&nbsp;&nbsp;Für den Inhalt der Seite sind die Betreiber verantwortlich.</span>
 			</div>

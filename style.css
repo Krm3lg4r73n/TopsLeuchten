@@ -1,3 +1,7 @@
+---
+
+---
+
 html
 {
 	height:100%;
@@ -14,7 +18,7 @@ body
 
 div#main
 {
-	background: url(/img/pattern03.png) repeat;
+	background: url({{ site.baseurl }}/img/pattern03.png) repeat;
 	border-style: solid;
 	border-top-width: 0px;
 	border-bottom-width: 0px;
@@ -40,7 +44,7 @@ div#content
 
 div#header
 {
-	background: url(/img/title.png) no-repeat;
+	background: url({{ site.baseurl }}/img/title.png) no-repeat;
 	background-position: 50% 0px;
 	width: 100%;
 	height: 130px;
@@ -114,7 +118,7 @@ a#link_flag_deu
 	display: block;
 	float: right;
 	text-decoration: none;
-	background: url(/img/flag_deu.png) no-repeat;
+	background: url({{ site.baseurl }}/img/flag_deu.png) no-repeat;
 	border: 1px solid #AAAAAA;
 	padding: 0px;
 	margin: 5px;
@@ -127,7 +131,7 @@ a#link_flag_eng
 	display: block;
 	float: right;
 	text-decoration: none;
-	background: url(/img/flag_eng.png) no-repeat;
+	background: url({{ site.baseurl }}/img/flag_eng.png) no-repeat;
 	border: 1px solid #AAAAAA;
 	padding: 0px;
 	margin: 5px;

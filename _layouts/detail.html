@@ -5,7 +5,7 @@
 	<meta name="keywords" content="topsleuchten, czaplinski, tops, leuchten, lampen, peter" />
 	<meta name="author" content="Czaplinski, David" />
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="/style.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/style.css">
 	<style type="text/css">
 		div#content_top
 		{
@@ -25,7 +25,7 @@
 		
 		a#title
 		{
-			background: url(/img/title_small.png) no-repeat;
+			background: url({{ site.baseurl }}/img/title_small.png) no-repeat;
       		text-decoration: none;
       		display: block;
 			width: 100%;
@@ -86,7 +86,7 @@
 	
 		a#left
 		{
-			background: url(/img/arrow_left_full.png) no-repeat;
+			background: url({{ site.baseurl }}/img/arrow_left_full.png) no-repeat;
       		text-decoration: none;
       		display: block;
 			float: left;
@@ -96,7 +96,7 @@
 		
 		div#left
 		{
-			background: url(/img/arrow_left_half.png) no-repeat;
+			background: url({{ site.baseurl }}/img/arrow_left_half.png) no-repeat;
 			float: left;
 			width: 38px;
 			height: 100px;
@@ -105,7 +105,7 @@
 	
 		a#right
 		{
-			background: url(/img/arrow_right_full.png) no-repeat;
+			background: url({{ site.baseurl }}/img/arrow_right_full.png) no-repeat;
       		text-decoration: none;
       		display: block;
       		position: relative;
@@ -117,7 +117,7 @@
 		
 		div#right
 		{
-			background: url(/img/arrow_right_half.png) no-repeat;
+			background: url({{ site.baseurl }}/img/arrow_right_half.png) no-repeat;
       		position: relative;
 			left: 738px;
 			top: 0px; 
@@ -184,8 +184,8 @@
 			<div id="content_top">
 			
 				<div id="content_top_left">
-					<a id="title" href="/de/"></a>
-					<img id="leuchte_haupt" src="/img/{{ page.img_folder }}/main.jpg" width="300" height="225" /> <br/>
+					<a id="title" href="{{ site.baseurl }}/de/"></a>
+					<img id="leuchte_haupt" src="{{ site.baseurl }}/img/{{ page.img_folder }}/main.jpg" width="300" height="225" /> <br/>
 				</div>
 				
 				<div id="content_top_middle"></div>
@@ -204,7 +204,7 @@
 					<div class="filler_25"></div>
 				
 					<div id="content_bottom_view">					
-						<div id='content_bottom_img' style='background-image: url(/img/{{ page.img_folder }}/{{ view }});'></div>
+						<div id='content_bottom_img' style='background-image: url({{ site.baseurl }}/img/{{ page.img_folder }}/{{ view }});'></div>
 					</div>
 				{% endfor %}
 			</div>

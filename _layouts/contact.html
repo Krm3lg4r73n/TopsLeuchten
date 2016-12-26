@@ -7,7 +7,7 @@
 	<meta name="author" content="Czaplinski, David" />
 	<!--<script language="JavaScript" src="scroll.js"></script>-->
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="/style.css">    	
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/style.css">    	
 	<style type="text/css">	
 
 	div.window
@@ -24,7 +24,7 @@
 	{
     text-decoration: none;
     display: block;
-		background: url(/img/title_gaestebuch.png) no-repeat;
+		background: url({{ site.baseurl }}/img/title_gaestebuch.png) no-repeat;
 		background-position: 50% 0px;
 		width: 100%;
 		height: 130px;
@@ -42,14 +42,14 @@
 		<div id="content">
 			<div class="filler_50"></div>
 			
-			<a id="header" href="/{{ page.locale }}/"></a>
+			<a id="header" href="{{ site.baseurl }}/{{ page.locale }}/"></a>
 			
 			<div class="filler_50"></div>
 			
 			<div id="textbox">
 				<span class="text02">
           {{ content }}
-					<a id="kontakt" href="mailto:info@topsleuchten.de" style="font-weight: bold;">info@topsleuchten.de</a><br/>
+					<a id="kontakt" href="{{ site.baseurl }}mailto:info@topsleuchten.de" style="font-weight: bold;">info@topsleuchten.de</a><br/>
 				</span>
 			</div>
 			
@@ -70,7 +70,7 @@
         (d.head || d.body).appendChild(s);
         })();
         </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a href="{{ site.baseurl }}https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			</div>
 			
 			<div class="filler_50"></div>
