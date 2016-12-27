@@ -6,20 +6,20 @@
 	<meta name="keywords" content="topsleuchten, czaplinski, tops, leuchten, lampen, peter" />
 	<meta name="author" content="Czaplinski, David" />
 	<!--<script language="JavaScript" src="scroll.js"></script>-->
-	
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/style.css">    	
-	<style type="text/css">	
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/style.css">
+	<style type="text/css">
 
 	div.window
 	{
 		width: 700px;
-		margin: 60px auto;	
+		margin: 60px auto;
 		padding: 10px;
 		border: 1px solid white;
 		font-size: 20px;
 		background-color: #000000;
 	}
-	
+
 	a#header
 	{
     text-decoration: none;
@@ -30,31 +30,31 @@
 		height: 130px;
 	}
 	</style>
-	
+
     <title>TopsLeuchten - {{ page.title }}</title>
 </head>
 
 <body>
-	<div id="main">		
-	
+	<div id="main">
+
     {% include flag_link.html locale=page.locale path="contact.html" %}
-		
+
 		<div id="content">
 			<div class="filler_50"></div>
-			
+
 			<a id="header" href="{{ site.baseurl }}/{{ page.locale }}/"></a>
-			
+
 			<div class="filler_50"></div>
-			
+
 			<div id="textbox">
 				<span class="text02">
           {{ content }}
-					<a id="kontakt" href="{{ site.baseurl }}mailto:info@topsleuchten.de" style="font-weight: bold;">info@topsleuchten.de</a><br/>
+					<a id="kontakt" href="mailto:info@topsleuchten.de" style="font-weight: bold;">info@topsleuchten.de</a><br/>
 				</span>
 			</div>
-			
+
 			<div class="filler_25"></div>
-		
+
 			<div class="window">
         <div id="disqus_thread"></div>
         <script>
@@ -72,13 +72,13 @@
         </script>
         <noscript>Please enable JavaScript to view the <a href="{{ site.baseurl }}https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			</div>
-			
+
 			<div class="filler_50"></div>
-		
+
 		</div><!-- content -->
 
 		{% include footer.html locale=page.locale %}
-		
+
 	</div><!-- main -->
 </body>
 
