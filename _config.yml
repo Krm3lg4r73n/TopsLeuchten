@@ -25,6 +25,7 @@ permalink: title
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
 
 # Collections
 collections:
