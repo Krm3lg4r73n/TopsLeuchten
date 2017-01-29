@@ -15,7 +15,7 @@ Käuflich sind meine Objekte alle nicht. Der Besuch einer Ausstellung ist auch k
 
 In 2017 werden meine Leuchten vielleicht auch wieder irgendwo im „Ruhrpott“ zu sehen sein. Ob auf dem Steinhof oder woanders steht zur Zeit noch nicht fest. Wichtiger als die Auswahl einer geeigneten Location ist für mich aber vor allem die Lösung eines Problems der Logistik. Insbesondere der Transport und der Aufbau der Leuchten stellen bei einem Gesamtgewicht von ca. 700 kg einen nicht unerheblichen Kraftakt dar. Um dies stemmen zu können, bin ich auf tatkräftige Hilfe angewiesen.
 
-<span style="font-style: bold">Sollten Sie also einen besonders geeigneten Ort für eine Ausstellung kennen, mir Ihre Hilfe bei zukünftigen Ausstellungen anbieten können, oder auch nur den Wunsch haben, über künftige Termine informiert zu werden, so schreiben Sie mir dies bitte in mein Gästebuch.</span>
+<span style="font-weight: bold">Sollten Sie also einen besonders geeigneten Ort für eine Ausstellung kennen, mir Ihre Hilfe bei zukünftigen Ausstellungen anbieten können, oder auch nur den Wunsch haben, über künftige Termine informiert zu werden, so schreiben Sie mir dies bitte in mein Gästebuch.</span>
 
 
 Peter Czaplinski
