@@ -50,7 +50,7 @@ div#header
 	height: 130px;
 }
 
-div#textbox
+div.textbox
 {
 	text-align: center;
 	width: 100%;
