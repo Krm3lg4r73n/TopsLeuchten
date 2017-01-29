@@ -9,13 +9,13 @@ Irgendwann, als die Anzahl der Leuchten bereits stark angewachsen war, kam mir d
 
 <span style="text-align: center">Die lokale Presse schrieb dazu:</span>
 
-<span style="text-align: center; font-style: italic">Während der 20 Minuten langen Schau taucht der Zuschauer in eine andere Welt ein. Mancher stellt sich eine Unterwasserwelt mit leuchtenden Algen und Glitzerfischen vor. Ein anderer assoziiert die Lichter mit dem Weltall. In dieser Dunkelheit bietet sich die wunderbare Gelegenheit, zur Ruhe zu kommen und den Vorweihnachts-Stress, den sich viele Mitmenschen selber auferlegen, abzustreifen.<span>
+<span style="text-align: center; font-style: italic">Während der 20 Minuten langen Schau taucht der Zuschauer in eine andere Welt ein. Mancher stellt sich eine Unterwasserwelt mit leuchtenden Algen und Glitzerfischen vor. Ein anderer assoziiert die Lichter mit dem Weltall. In dieser Dunkelheit bietet sich die wunderbare Gelegenheit, zur Ruhe zu kommen und den Vorweihnachts-Stress, den sich viele Mitmenschen selber auferlegen, abzustreifen.</span>
 
 Käuflich sind meine Objekte alle nicht. Der Besuch einer Ausstellung ist auch kostenfrei. Ich freue mich aber immer über Spenden für das „Friedensdorf International“ in Oberhausen.
 
 In 2017 werden meine Leuchten vielleicht auch wieder irgendwo im „Ruhrpott“ zu sehen sein. Ob auf dem Steinhof oder woanders steht zur Zeit noch nicht fest. Wichtiger als die Auswahl einer geeigneten Location ist für mich aber vor allem die Lösung eines Problems der Logistik. Insbesondere der Transport und der Aufbau der Leuchten stellen bei einem Gesamtgewicht von ca. 700 kg einen nicht unerheblichen Kraftakt dar. Um dies stemmen zu können, bin ich auf tatkräftige Hilfe angewiesen.
 
-Sollten Sie also einen besonders geeigneten Ort für eine Ausstellung kennen, mir Ihre Hilfe bei zukünftigen Ausstellungen anbieten können, oder auch nur den Wunsch haben, über künftige Termine informiert zu werden, so schreiben Sie mir dies bitte in mein Gästebuch.
+<span style="font-style: bold">Sollten Sie also einen besonders geeigneten Ort für eine Ausstellung kennen, mir Ihre Hilfe bei zukünftigen Ausstellungen anbieten können, oder auch nur den Wunsch haben, über künftige Termine informiert zu werden, so schreiben Sie mir dies bitte in mein Gästebuch.</span>
 
 
 Peter Czaplinski
