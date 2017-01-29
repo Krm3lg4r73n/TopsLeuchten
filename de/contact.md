@@ -7,9 +7,9 @@ Den Namen „TopsLeuchten“ habe ich abgeleitet von „Topshof“, einem Bauern
 
 Irgendwann, als die Anzahl der Leuchten bereits stark angewachsen war, kam mir dann die Idee, die Ausstrahlung der Leuchten durch das Zusammenspiel mit Musik noch zu verstärken. Mit Unterstützung hilfsbereiter Menschen und einigem Aufwand an Technik und Zeit, konnte ich dies dann auch realisieren. Auf die meisten Personen wirkt das Ergebnis so, dass sie sich nach einiger Zeit entspannter oder neudeutsch „entschleunigter“ fühlen. So ähnlich beschrieben die meisten Besucher ihren Eindruck von der ersten Ausstellung, die vom 05.-11. Dezember 2016 auf dem Steinhof in Duisburg zu sehen war.
 
-Die lokale Presse schrieb dazu:
+<span style="text-align: center">Die lokale Presse schrieb dazu:</span>
 
-Während der 20 Minuten langen Schau taucht der Zuschauer in eine andere Welt ein. Mancher stellt sich eine Unterwasserwelt mit leuchtenden Algen und Glitzerfischen vor. Ein anderer assoziiert die Lichter mit dem Weltall. In dieser Dunkelheit bietet sich die wunderbare Gelegenheit, zur Ruhe zu kommen und den Vorweihnachts-Stress, den sich viele Mitmenschen selber auferlegen, abzustreifen. 
+<span style="text-align: center; font-style: italic">Während der 20 Minuten langen Schau taucht der Zuschauer in eine andere Welt ein. Mancher stellt sich eine Unterwasserwelt mit leuchtenden Algen und Glitzerfischen vor. Ein anderer assoziiert die Lichter mit dem Weltall. In dieser Dunkelheit bietet sich die wunderbare Gelegenheit, zur Ruhe zu kommen und den Vorweihnachts-Stress, den sich viele Mitmenschen selber auferlegen, abzustreifen.<span>
 
 Käuflich sind meine Objekte alle nicht. Der Besuch einer Ausstellung ist auch kostenfrei. Ich freue mich aber immer über Spenden für das „Friedensdorf International“ in Oberhausen.
 
