@@ -9,7 +9,7 @@ Irgendwann, als die Anzahl der Leuchten bereits stark angewachsen war, kam mir d
 
 Die lokale Presse schrieb dazu:
 
-<span style="font-style: italic">Während der 20 Minuten langen Schau taucht der Zuschauer in eine andere Welt ein. Mancher stellt sich eine Unterwasserwelt mit leuchtenden Algen und Glitzerfischen vor. Ein anderer assoziiert die Lichter mit dem Weltall. In dieser Dunkelheit bietet sich die wunderbare Gelegenheit, zur Ruhe zu kommen und den Vorweihnachts-Stress, den sich viele Mitmenschen selber auferlegen, abzustreifen.<span>
+<span style="font-style: italic">Während der 20 Minuten langen Schau taucht der Zuschauer in eine andere Welt ein. Mancher stellt sich eine Unterwasserwelt mit leuchtenden Algen und Glitzerfischen vor. Ein anderer assoziiert die Lichter mit dem Weltall. In dieser Dunkelheit bietet sich die wunderbare Gelegenheit, zur Ruhe zu kommen und den Vorweihnachts-Stress, den sich viele Mitmenschen selber auferlegen, abzustreifen.</span>
 
 <span style="text-align: left">Käuflich sind meine Objekte alle nicht. Der Besuch einer Ausstellung ist auch kostenfrei. Ich freue mich aber immer über Spenden für das „Friedensdorf International“ in Oberhausen.
 
