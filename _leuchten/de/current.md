@@ -1,4 +1,5 @@
 ---
+title: "current"
 category: ground
 img_folder: "leuchte_118"
 name: "Aktuelles Projekt"
