@@ -18,4 +18,4 @@ Die lokale Presse schrieb dazu:
 <span style="text-align: left">Sollten Sie also einen besonders geeigneten Ort für eine Ausstellung kennen, mir Ihre Hilfe bei zukünftigen Ausstellungen anbieten können, oder auch nur den Wunsch haben, über künftige Termine informiert zu werden, so schreiben Sie mir dies bitte in mein Gästebuch.</span>
 
 
-Peter Czaplinski</span>
+<span style="text-align: left">Peter Czaplinski</span>
