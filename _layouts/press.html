@@ -45,13 +45,15 @@
 			<a id="header" href="{{ site.baseurl }}/{{ page.locale }}/"></a>
 
 			<div class="filler_50"></div>
-
-			<div class="window">">
-      Test
-			</div>
-
+			
+			{% for view in page.views %}
+				<div class="filler_50"></div>
+				<div id="content_bottom_view">					
+					<div id='content_bottom_img' style='background-image: url({{ site.baseurl }}/img/{{ view }});'></div>
+				</div>
+			{% endfor %}
+			
 			<div class="filler_50"></div>
-
 		</div><!-- content -->
 
 		{% include footer.html locale=page.locale %}
