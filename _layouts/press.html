@@ -47,10 +47,8 @@
 			<div class="filler_50"></div>
 			
 			{% for view in page.views %}
-				<div class="filler_50"></div>
-				<div id="content_bottom_view">					
-					<div id='content_bottom_img' style='background-image: url({{ site.baseurl }}/img/{{ view }});'></div>
-				</div>
+				<div class="filler_50"></div>				
+				<img src='{{ site.baseurl }}/img/{{ view }}' />
 			{% endfor %}
 			
 			<div class="filler_50"></div>
