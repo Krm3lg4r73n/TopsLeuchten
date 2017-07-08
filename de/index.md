@@ -1,4 +1,4 @@
 ---
 layout: home
 ---
-Den Namen „TopsLeuchten“ habe ich abgeleitet von <br/>„Topshof“, einem Bauern- und Reiterhof in Krefeld Uerdingen.
+Der Name „TopsLeuchten" leitet sich ab von <br/>„Topshof“, einem Bauern- und Reiterhof in Krefeld Uerdingen.
