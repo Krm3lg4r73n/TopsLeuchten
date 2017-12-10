@@ -1,0 +1,90 @@
+---
+---
+
+.flag-link {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+
+  height: 1.7rem;
+  width: 2.75rem;
+  border-color: hsl(0, 0%, 30%);
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0 0.1rem 0.5rem hsl(0, 0%, 5%);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(200, 100, 0, 0.3);
+  background-blend-mode: multiply;
+
+  transition: box-shadow 0.1s;
+
+  &:hover {
+    border-color: hsl(0, 0%, 50%);
+    box-shadow: 0 0 0.1rem 0.1rem hsl(0, 0%, 50%);
+  }
+
+  &:active {
+    border-color: hsl(0, 0%, 50%);
+    box-shadow: 0 0 0.1rem 0.1rem hsl(0, 0%, 50%);
+    background-color: rgba(200, 100, 0, 0.4);
+  }
+  
+  &--de {
+    background-image: url({{ site.baseurl }}/img/flagDe.jpg);
+  }
+
+  &--en {
+    background-image: url({{ site.baseurl }}/img/flagEn.jpg);
+  }
+}
+
+.logo {
+  margin: 4rem 0;
+  width: 100%;
+  max-width: 512px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    color: hsl(0, 0%, 90%);
+    position: absolute;
+    left: calc(20% + 12vw);
+    bottom: -32px;
+    font-size: xx-large;
+    font-family: 'Poiret One', sans-serif;
+  }
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: smaller;
+  color: hsl(0, 0%, 30%);
+  padding: 0.5rem;
+
+  hr {
+    width: 100%;
+    margin: 0.5rem;
+    border-bottom: 1px solid hsl(0, 0%, 30%);
+  }
+
+  a {
+    text-decoration: underline;
+  
+    &:hover {
+      text-decoration: underline;
+      color: hsl(0, 0%, 50%);
+    }
+  
+    &:active {
+      text-decoration: underline;
+      color: hsl(0, 0%, 60%);
+    }
+  }
+}

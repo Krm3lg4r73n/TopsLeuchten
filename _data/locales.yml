@@ -1,7 +1,9 @@
 de:
   contact_and_gb: "Kontakt & Gästebuch"
   more: "mehr ..."
+  go_back: "zur Auswahl" 
 
 en:
   contact_and_gb: "Contact & Guestbook"
   more: "more ..."
+  go_back: "to collection"

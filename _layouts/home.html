@@ -1,188 +1,69 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
-
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<meta name="google-site-verification" content="_R-dbAQExdJvfjmhsKCcatA8FIiX7xfh2-rhZ3i5ebk" />
 	<meta name="keywords" content="topsleuchten, czaplinski, tops, leuchten, lampen, peter" />
 	<meta name="author" content="Czaplinski, David" />
-
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/style.css">
-
-	<style type="text/css">
-		div.link_left
-		{
-			float: left;
-			width: 384px;
-			height: 384px;
-		}
-
-		div.link_right
-		{
-			float: right;
-			width: 384px;
-			height: 384px;
-		}
-
-		div.link_bottom
-		{
-			clear: both;
-			padding: 42px;
-			padding-top: 49px;
-			width: 691px;
-			height: 152px;
-		}
-
-		a#img_link_inair
-		{
-			display: block;
-			text-decoration: none;
-			background: url({{ site.baseurl }}/img/link_in_air.png) no-repeat;
-			border: 1px solid #FFFFFF;
-			padding: 0px;
-			margin: 42px;
-			width: 300px;
-			height: 300px;
-		}
-
-		a#img_link_onground
-		{
-			display: block;
-			text-decoration: none;
-			background: url({{ site.baseurl }}/img/link_on_ground.png) no-repeat;
-			border: 1px solid #FFFFFF;
-			padding: 0px;
-			margin: 42px;
-			width: 300px;
-			height: 300px;
-		}
-
-		a#img_link_current
-		{
-			display: block;
-			text-decoration: none;
-			background: url({{ site.baseurl }}/img/current.jpg) no-repeat;
-			border: 1px solid #FFFFFF;
-			padding: 0px;
-			margin: 42px;
-			width: 300px;
-			height: 300px;
-		}
-
-		a#img_link_onwall
-		{
-			display: block;
-			text-decoration: none;
-			background: url({{ site.baseurl }}/img/link_on_wall.png) no-repeat;
-			border: 1px solid #FFFFFF;
-			padding: 0px;
-			margin: 42px;
-			width: 300px;
-			height: 300px;
-		}
-
-		a#img_link_bottom
-		{
-			display: block;
-			text-decoration: none;
-			background: url({{ site.baseurl }}/img/link_kontakt.png) no-repeat;
-			border: 1px solid #FFFFFF;
-			padding: 0px;
-			margin: 0px;
-			width: 691px;
-			height: 152px;
-		}
-
-		a#img_link_press
-		{
-			display: block;
-			text-decoration: none;
-			background: url({{ site.baseurl }}/img/aktuelles.jpg) no-repeat;
-			border: 1px solid #FFFFFF;
-			padding: 0px;
-			margin: 0px;
-			width: 691px;
-			height: 160px;
-			background-size: 691px;
-			background-position: center;
-		}
-		
-		a#link_more
-		{
-			text-decoration: none;
-			color: #F0E130;
-		}
-	</style>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Poiret+One">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/includes.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/home.css">
 	<title>TopsLeuchten</title>
 </head>
-
 <body>
-
-	<div id="main">
-
+	<main class="home">
 		{% include flag_link.html locale=page.locale path="" %}
+		<!-- {% include logo.html locale=page.locale %} -->
 
-		<div id="content">
+		<img class="home__logo" src="{{ site.baseurl }}/img/logo_neu.png" />
 
-			<div class="filler_50"></div>
-
-			<div id="header"></div>
-
-			<div class="filler_50"></div>
-
-			<div class="textbox">
-				<span class="text01">
-					The beauty of light in life
-				</span>
+		<!-- <h1>The beauty of light in life</h1> -->
+		<section class="home__video">
+			<div class="responsive-iframe">
+				<iframe width="560" height="315" src="//www.youtube.com/embed/oKIU7pJjzPw?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
-
-			<div class="filler_50"></div>
-			
-			<iframe style="border: 1px solid #777777; background: #000000" width="560" height="315" src="//www.youtube.com/embed/oKIU7pJjzPw?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-			
-			<div class="filler_50"></div>
-			
-			<div class="textbox">
-				<span class="text01" style="font-size: 25px">
-					{{ content }}
-					<a id="link_more" href="{{ site.baseurl }}/{{ page.locale }}/contact.html">{{ site.data.locales[page.locale].more }}</a>
-				</span>
+		</section>
+		<section class="home__content">
+			{{ content }}
+		</section>
+		<nav class="home__nav">
+			<div class="link-row">
+				<div class="link-wrapper">
+					<a href="{{ site.baseurl }}/{{ page.locale }}/selection_ground.html">
+						<img src='{{ site.baseurl }}/img/link_on_ground.png' alt="Topsleuchten on Ground"/>
+					</a>
+				</div>
+				<div class="link-wrapper">
+					<a href="{{ site.baseurl }}/{{ page.locale }}/selection_wall.html">
+						<img src='{{ site.baseurl }}/img/link_on_wall.png' alt="Topsleuchten on Wall"/>
+					</a>
+				</div>
 			</div>
-
-			<div class="filler_50"></div>
-
-			<div class="link_left">
-				<a id="img_link_onground" href="{{ site.baseurl }}/{{ page.locale }}/selection_ground.html"></a>
+			<div class="link-row">
+				<div class="link-wrapper">
+					<a href="{{ site.baseurl }}/{{ page.locale }}/selection_air.html">
+						<img src='{{ site.baseurl }}/img/link_in_air.png' alt="Topsleuchten in Air"/>
+					</a>
+				</div>
+				<div class="link-wrapper">
+					<a href="{{ site.baseurl }}/leuchten/{{ page.locale }}/current.html">
+						<img src='{{ site.baseurl }}/img/link_current.jpg' alt="Current Project"/>
+					</a>
+				</div>
 			</div>
-
-			<div class="link_right">
-				<a id="img_link_onwall" href="{{ site.baseurl }}/{{ page.locale }}/selection_wall.html"></a>
+			<div class="link-wrapper">
+				<a href="{{ site.baseurl }}/{{ page.locale }}/contact.html">
+					<img src='{{ site.baseurl }}/img/link_contact_{{ page.locale }}.png' alt="Contact"/>
+				</a>
 			</div>
-
-			<div class="link_left">
-				<a id="img_link_inair" href="{{ site.baseurl }}/{{ page.locale }}/selection_air.html"></a>
+			<div class="link-wrapper">
+				<a href="{{ site.baseurl }}/{{ page.locale }}/press.html">
+					<img src='{{ site.baseurl }}/img/link_press.png' alt="Press"/>
+				</a>
 			</div>
-
-			<div class="link_right">
-				<a id="img_link_current" href="{{ site.baseurl }}/leuchten/{{ page.locale }}/current.html"></a>
-			</div>
-
-			<div class="link_bottom">
-				<a id="img_link_bottom" href="{{ site.baseurl }}/{{ page.locale }}/contact.html"></a>
-			</div>
-			
-			<div class="link_bottom">
-				<a id="img_link_press" href="{{ site.baseurl }}/{{ page.locale }}/press.html"></a>
-			</div>
-			
-
-			<div class="filler_100"></div>
-		</div><!-- content -->
-
+		</nav>
 		{% include footer.html locale=page.locale %}
-
-	</div><!-- main -->
+	</main>
 </body>
-
 </html>

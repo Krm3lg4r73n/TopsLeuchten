@@ -1,106 +1,44 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
-
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<meta name="keywords" content="topsleuchten, czaplinski, tops, leuchten, lampen, peter" />
 	<meta name="author" content="Czaplinski, David" />
-	<!--<script language="JavaScript" src="scroll.js"></script>-->
-
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/style.css">
-	<style type="text/css">
-
-	div.window
-	{
-		width: 700px;
-		margin: 60px auto;
-		padding: 10px;
-		border: 1px solid white;
-		font-size: 20px;
-		background-color: #000000;
-	}
-
-	a#header
-	{
-    		text-decoration: none;
-    		display: block;
-		background: url({{ site.baseurl }}/img/title.png) no-repeat;
-		background-position: 50% 0px;
-		width: 100%;
-		height: 130px;
-	}
-	
-	img
-	{
-		width: 100%;
-	}
-		
-	a
-	{
-		color: #fff;	
-	}
-	
-	#steinhof-wrapper
-	{
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-flex-align: center;
-		-ms-flex-align: center;
-		-webkit-align-items: center;
-		align-items: center;
-	}
-		
-	#steinhof-wrapper img 
-	{
-		width: 50%;
-		margin-right: 100px;
-	}
-	</style>
-
-    <title>TopsLeuchten - {{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Poiret+One">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/includes.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/press.css">
+	<title>TopsLeuchten - {{ page.title }}</title>
 </head>
-
 <body>
-	<div id="main">
+	<main class="press">
+    {% include flag_link.html locale=page.locale path=page.filename %}
 
-    {% include flag_link.html locale=page.locale path="contact.html" %}
-
-		<div id="content">
-			<div class="filler_50"></div>
-
-			<a id="header" href="{{ site.baseurl }}/{{ page.locale }}/"></a>
-
-			<div class="filler_50"></div>		
-			
-			<div id="textbox">
-				<span class="text02" style="text-align: left; font-size: 1.2rem;">
-          {{ content }}
-				</span>
-			</div>
-			
-			<div class="filler_50"></div>	
-			<div id="steinhof-wrapper">
-				<img src='{{ site.baseurl }}/img/steinhof.jpg' />
-				<a href="https://www.steinhof-duisburg.de/">www.steinhof-duisburg.de</a>
-		   	</div>
-			
-			<div class="filler_50"></div>				
-			<img src='{{ site.baseurl }}/img/presse_01.jpg' />
-			<a href="http://www.waz.de/staedte/duisburg/sued/eintauchen-in-die-schoene-bunte-lichterwelt-id208898699.html">Link zum Artikel der WAZ</a>
-			
-
-			<div class="filler_50"></div>				
-			<img src='{{ site.baseurl }}/img/presse_02.jpg' />
-			
-			<div class="filler_50"></div>
-		</div><!-- content -->
-
+    {% capture logo_href %}{{ site.baseurl }}/{{ page.locale }}/{% endcapture %}
+		{% include logo.html locale=page.locale title=page.title href=logo_href %}
+    
+    <div class="press__exhibitions">
+      <h1>Kommende Ausstellung</h1>
+  
+      <img src='{{ site.baseurl }}/img/presse/sh17_flyer.jpg' />
+      <a target="_blank" href="{{ site.baseurl }}/files/sh17_flyer.pdf">Link zum Flyer als PDF</a>
+  
+      <h1>Vergangene Ausstellungen</h1>
+      
+      <h2>Berlin Leuchtet 2017</h2>
+      <img src='{{ site.baseurl }}/img/presse/bl17_website.jpg' />
+      
+      <h2>Steinhof Duisburg 2016</h2>
+      <section class="press__content">
+        {{ content }}
+      </section>
+      <img src='{{ site.baseurl }}/img/presse/sh16_photo.jpg' />
+      <a href="https://www.steinhof-duisburg.de/">Link zum Steinhof Duisburg</a>
+      <img src='{{ site.baseurl }}/img/presse/sh16_article.jpg' />
+      <a href="http://www.waz.de/staedte/duisburg/sued/eintauchen-in-die-schoene-bunte-lichterwelt-id208898699.html">Link zum Artikel der WAZ</a>
+    </div>
+	  
 		{% include footer.html locale=page.locale %}
-
-	</div><!-- main -->
+	</main>
 </body>
-
 </html>

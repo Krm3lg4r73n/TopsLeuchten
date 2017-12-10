@@ -1,8 +1,7 @@
 ---
-title: "current"
 category: ground
 img_folder: "leuchte_118"
-name: "Aktuelles Projekt"
+name: "Mauerfall"
 views:
   - "118-6.jpg"
   - "tmp_22991-Mauerfall-Webseite-02800661689.JPG"
@@ -13,5 +12,3 @@ views:
   - "118-2.JPG"
   - "118-1.JPG"
 ---
-
-Mauerfall

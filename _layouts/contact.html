@@ -1,85 +1,47 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
-
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<meta name="keywords" content="topsleuchten, czaplinski, tops, leuchten, lampen, peter" />
 	<meta name="author" content="Czaplinski, David" />
-	<!--<script language="JavaScript" src="scroll.js"></script>-->
-
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/style.css">
-	<style type="text/css">
-
-	div.window
-	{
-		width: 700px;
-		margin: 60px auto;
-		padding: 10px;
-		border: 1px solid white;
-		font-size: 20px;
-		background-color: #000000;
-	}
-
-	a#header
-	{
-    text-decoration: none;
-    display: block;
-		background: url({{ site.baseurl }}/img/title_gaestebuch.png) no-repeat;
-		background-position: 50% 0px;
-		width: 100%;
-		height: 130px;
-	}
-	</style>
-
-    <title>TopsLeuchten - {{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Poiret+One">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/includes.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/contact.css">
+	<title>TopsLeuchten - {{ page.title }}</title>
 </head>
-
 <body>
-	<div id="main">
+	<main class="contact">
+    {% include flag_link.html locale=page.locale path=page.filename %}
 
-    {% include flag_link.html locale=page.locale path="contact.html" %}
+    {% capture logo_href %}{{ site.baseurl }}/{{ page.locale }}/{% endcapture %}
+		{% include logo.html locale=page.locale title=page.title href=logo_href %}
 
-		<div id="content">
-			<div class="filler_50"></div>
+		<section class="contact__content">
+			{{ content }}
+    </section>
 
-			<a id="header" href="{{ site.baseurl }}/{{ page.locale }}/"></a>
-
-			<div class="filler_50"></div>
-
-			<div id="textbox" style="text-align: left">
-				<span class="text02">
-          {{ content }}
-					<a id="kontakt" href="mailto:info@topsleuchten.de" style="font-weight: bold;">info@topsleuchten.de</a><br/>
-				</span>
-			</div>
-
-			<div class="filler_25"></div>
-
-			<div class="window">
-        <div id="disqus_thread"></div>
-        <script>
+    <section class="contact__comments">
+      <div id="disqus_thread"></div>
+      <script>
         var disqus_config = function () {
-        this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'TopsLeuchten'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = 'TopsLeuchten'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
 
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = '//topsleuchten.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
+        (function () { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = '//topsleuchten.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
         })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="{{ site.baseurl }}https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-			</div>
-
-			<div class="filler_50"></div>
-
-		</div><!-- content -->
-
+      </script>
+      <noscript>Please enable JavaScript to view the
+        <a href="{{ site.baseurl }}https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+      </noscript>
+    </section>
+    
 		{% include footer.html locale=page.locale %}
-
-	</div><!-- main -->
+	</main>
 </body>
-
 </html>

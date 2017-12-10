@@ -1,0 +1,25 @@
+---
+---
+
+@import 'reset';
+@import 'default';
+
+.contact {
+  &__content {
+    flex: 1;
+    max-width: 80%;
+    text-align: left;
+    margin: 3rem 0;
+    font-size: large;
+    line-height: 150%;
+    
+    p {
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__comments {
+    width: 100%;
+  }
+}
