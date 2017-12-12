@@ -41,7 +41,6 @@
     img {
       border-radius: 0.2rem 0 0 0.2rem;
       height: 100%;
-      width: 100%;
       max-width: 300px;
 
       @media (max-width: 850px) {
@@ -60,14 +59,13 @@
 
       .name {
         display: block;
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         font-weight: bold;
         font-family: 'Poiret One', sans-serif;
         margin-bottom: 1rem;
       }
 
       p {
-        font-size: large;
         line-height: 150%;
       }
     }
