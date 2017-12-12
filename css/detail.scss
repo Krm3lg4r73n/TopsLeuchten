@@ -11,7 +11,7 @@
     padding: 0 1rem;
   }
 
-  &__back-link {    
+  &__back-link {
     align-self: flex-start;
     margin-top: 1rem;
 
@@ -22,7 +22,7 @@
     align-items: center;
 
     svg {
-      fill: currentColor;  
+      fill: currentColor;
       margin-right: .7rem;
     }
 
@@ -37,16 +37,18 @@
     margin-bottom: 3rem;
     background-color: #000;
     display: flex;
-    
+
     img {
       border-radius: 0.2rem 0 0 0.2rem;
       height: 100%;
+      width: 100%;
+      max-width: 300px;
 
       @media (max-width: 850px) {
         display: none;
       }
     }
-    
+
     section {
       display: flex;
       flex-direction: column;
@@ -76,7 +78,7 @@
     border-radius: 0.2rem;
     width: 100%;
     margin: 2rem;
-    
+
     img {
       margin: 0 auto;
       width: auto;
