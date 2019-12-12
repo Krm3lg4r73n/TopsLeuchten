@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	<meta name="keywords" content="topsleuchten, czaplinski, tops, leuchten, lampen, peter" />
-	<meta name="author" content="Czaplinski, David" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Poiret+One">
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/includes.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/press.css">
-	<title>TopsLeuchten - {{ page.title }}</title>
-</head>
-<body>
-	<main class="press">
-    {% include flag_link.html locale=page.locale path=page.filename %}
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta
+      name="keywords"
+      content="topsleuchten, czaplinski, tops, leuchten, lampen, peter"
+    />
+    <meta name="author" content="Czaplinski, David" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway|Poiret+One"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="{{ site.baseurl }}/css/includes.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="{{ site.baseurl }}/css/press.css"
+    />
+    <title>TopsLeuchten - {{ page.title }}</title>
+  </head>
+  <body>
+    <main class="press">
+      {% include flag_link.html locale=page.locale path=page.filename %} {%
+      capture logo_href %}{{ site.baseurl }}/{{ page.locale }}/{% endcapture %}
+      {% include logo.html locale=page.locale title=page.title href=logo_href %}
 
-    {% capture logo_href %}{{ site.baseurl }}/{{ page.locale }}/{% endcapture %}
-		{% include logo.html locale=page.locale title=page.title href=logo_href %}
-    
-    <div class="press__exhibitions">
-      <h1>Kommende Ausstellung</h1>
-  <h2>Kunigundenheim 2018</h2>
-        <img src='{{ site.baseurl }}/img/presse/Flyer Kunigundenheim 2018 - Webseite Topsleuchten.jpg' />
-      <h1>Vergangene Ausstellungen</h1>
-      <img src='{{ site.baseurl }}/img/presse/sh17_flyer.jpg' />
-      <a target="_blank" href="{{ site.baseurl }}/files/sh17_flyer.pdf">Link zum Flyer als PDF</a>
-  
-      
-      
-      <h2>Berlin Leuchtet 2017</h2>
-      <img src='{{ site.baseurl }}/img/presse/bl17_website.jpg' />
-      
-      <h2>Steinhof Duisburg 2016</h2>
-      <section class="press__content">
-        {{ content }}
-      </section>
-      <img src='{{ site.baseurl }}/img/presse/sh16_photo.jpg' />
-      <a href="https://www.steinhof-duisburg.de/">Link zum Steinhof Duisburg</a>
-      <img src='{{ site.baseurl }}/img/presse/sh16_article.jpg' />
-      <a href="http://www.waz.de/staedte/duisburg/sued/eintauchen-in-die-schoene-bunte-lichterwelt-id208898699.html">Link zum Artikel der WAZ</a>
-    </div>
-	  
-		{% include footer.html locale=page.locale %}
-	</main>
-</body>
+      <div class="press__exhibitions">
+        <h1>Kommende Ausstellung</h1>
+        <h2>Hospiz Am Blumenplatz Krefeld 2019</h2>
+        <img src="{{ site.baseurl }}/img/presse/Hospiz Blumenplatz 1.jpg"/>
+        <p>Im Rahmen Weihnachtliches "Mit-Sing-Konzert" am 20. Dezember 2019.</p>
+
+        <h1>Vergangene Ausstellungen</h1>
+
+        <h2>Kunigundenheim 2018</h2>
+        <img
+          src="{{ site.baseurl }}/img/presse/Flyer Kunigundenheim 2018 - Webseite Topsleuchten.jpg"
+        />
+
+        <h2>Steinhof Duisburg 2017</h2>
+        <img src="{{ site.baseurl }}/img/presse/sh17_flyer.jpg" />
+        <a target="_blank" href="{{ site.baseurl }}/files/sh17_flyer.pdf"
+          >Link zum Flyer als PDF</a
+        >
+
+        <h2>Berlin Leuchtet 2017</h2>
+        <img src="{{ site.baseurl }}/img/presse/bl17_website.jpg" />
+
+        <h2>Steinhof Duisburg 2016</h2>
+        <section class="press__content">
+          {{ content }}
+        </section>
+        <img src="{{ site.baseurl }}/img/presse/sh16_photo.jpg" />
+        <a href="https://www.steinhof-duisburg.de/"
+          >Link zum Steinhof Duisburg</a
+        >
+        <img src="{{ site.baseurl }}/img/presse/sh16_article.jpg" />
+        <a
+          href="http://www.waz.de/staedte/duisburg/sued/eintauchen-in-die-schoene-bunte-lichterwelt-id208898699.html"
+          >Link zum Artikel der WAZ</a
+        >
+      </div>
+
+      {% include footer.html locale=page.locale %}
+    </main>
+  </body>
 </html>
