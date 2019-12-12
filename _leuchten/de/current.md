@@ -9,5 +9,7 @@ views:
 ---
 
 Höhe: 130 cm
+
 Breite: 95 cm
+
 Tiefe: 50 cm
