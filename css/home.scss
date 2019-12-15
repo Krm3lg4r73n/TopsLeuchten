@@ -3,13 +3,14 @@
 
 @import 'reset';
 @import 'default';
+@import 'global';
 
 .home {
   &__video {
     margin: 2rem 0;
     width: 80%;
   }
-  
+
   &__logo {
     margin: 3rem 0;
     width: 80%;
@@ -28,7 +29,7 @@
     .link-row {
       display: flex;
       justify-content: space-between;
-      
+
       @media (max-width: 850px) {
         max-width: 80%;
         margin: 0 auto;
@@ -36,11 +37,11 @@
         align-items: center;
       }
     }
-    
+
     .link-wrapper {
       padding: 2rem;
     }
-  
+
     a {
       display: block;
       width: 100%;
@@ -48,13 +49,14 @@
       border-radius: 0.2rem;
       box-shadow: 0.2rem 0.2rem 0.1rem hsl(0, 0%, 5%);
       transition: box-shadow 0.1s;
-    
+
       &:hover {
         border-color: hsl(0, 0%, 50%);
         box-shadow: 0 0 0.1rem 0.1rem hsl(0, 0%, 50%);
       }
 
       img {
+        min-width: 300px;
         width: 100%;
         height: auto;
         border-radius: 0.2rem;
@@ -63,10 +65,18 @@
   }
 }
 
+#overlay-text-current {
+  color: #bbb;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: 13px;
+}
+
 .responsive-iframe {
   box-shadow: 0.2rem 0.2rem 0.1rem hsl(0, 0%, 5%);
   background-color: #000;
-  
+
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   width: 100%;
