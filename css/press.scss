@@ -24,9 +24,18 @@
 
     h2 {
       margin-top: 3rem;
+
+      @media (max-width: 850px) {
+        font-size: 13pt;
+      }
     }
 
     a {
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 14pt;
       margin-bottom: 1rem;
     }
   }
@@ -37,7 +46,7 @@
     margin: 1rem 0;
     font-size: large;
     line-height: 150%;
-    
+
     p {
       margin-top: 1rem;
       margin-bottom: 1.5rem;
@@ -48,7 +57,7 @@
 .responsive-embed {
   box-shadow: 0.2rem 0.2rem 0.1rem hsl(0, 0%, 5%);
   background-color: #000;
-  
+
   position: relative;
   padding-bottom: 120%; /* 16:9 */
   width: 100%;
