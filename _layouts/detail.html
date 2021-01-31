@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	<meta name="keywords" content="topsleuchten, czaplinski, tops, leuchten, lampen, peter" />
-  <meta name="author" content="Czaplinski, David" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Poiret+One">
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/includes.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/detail.css">
-	<title>TopsLeuchten - {{ page.name }}</title>
-</head>
-<body>
-	<main class="detail">
-    {% include flag_link.html locale=page.locale path=page.filename %}
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta
+      name="keywords"
+      content="topsleuchten, czaplinski, tops, leuchten, lampen, peter"
+    />
+    <meta name="author" content="Czaplinski, David" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway|Poiret+One"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="{{ site.baseurl }}/css/includes.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="{{ site.baseurl }}/css/detail.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <title>TopsLeuchten - {{ page.name }}</title>
+  </head>
+  <body>
+    <main class="detail">
+      {% include flag_link.html locale=page.locale path=page.filename %}
 
-    <a class="detail__back-link" href="javascript:history.back()"> 
-      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-        <path d="M7,12L12,7V10H16V14H12V17L7,12M21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5M19,5H5V19H19V5Z" />
-      </svg>
-      <span>{{ site.data.locales[page.locale].go_back }}</span>
-    </a>
+      <a class="detail__back-link" href="javascript:history.back()">
+        <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+          <path
+            d="M7,12L12,7V10H16V14H12V17L7,12M21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5M19,5H5V19H19V5Z"
+          />
+        </svg>
+        <span>{{ site.data.locales[page.locale].go_back }}</span>
+      </a>
 
-		<header>
-      <img src="{{ site.baseurl }}/img/{{ page.img_folder }}/main.jpg" />
-      <section>
-        <span class="name">{{page.name}}</span>
-        {{ content }}
-      </section>
-    </header>
+      <header>
+        <img src="{{ site.baseurl }}/img/{{ page.img_folder }}/main.jpg" />
+        <section>
+          <span class="name">{{page.name}}</span>
+          {{ content }}
+        </section>
+      </header>
 
-    {% for view in page.views %}
+      {% for view in page.views %}
       <div class="detail__view">
         <img src="{{ site.baseurl }}/img/{{ page.img_folder }}/{{ view }}" />
       </div>
-    {% endfor %}
-    
-		{% include footer.html locale=page.locale %}
-	</main>
-</body>
+      {% endfor %} {% include footer.html locale=page.locale %}
+    </main>
+  </body>
 </html>
