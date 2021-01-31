@@ -70,7 +70,7 @@ span.text02
 	font-size: 16px;
 }
 
-div#footer 
+div#footer.page
 {
 	text-align: center;
 	clear: both;
@@ -81,7 +81,7 @@ div#footer
     height : 1px;
 }
 		
-span#footer
+span#footer.page
 {
 	color: #777777;
 	font-size: 14px;

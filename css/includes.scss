@@ -30,7 +30,7 @@
     box-shadow: 0 0 0.1rem 0.1rem hsl(0, 0%, 50%);
     background-color: rgba(200, 100, 0, 0.4);
   }
-  
+
   &--de {
     background-image: url({{ site.baseurl }}/img/flagDe.jpg);
   }
@@ -56,12 +56,13 @@
     position: absolute;
     left: calc(20% + 12vw);
     bottom: -32px;
+    white-space: nowrap;
     font-size: xx-large;
-    font-family: 'Poiret One', sans-serif;
+    font-family: "Poiret One", sans-serif;
   }
 }
 
-footer {
+footer.page {
   width: 100%;
   text-align: center;
   font-size: smaller;
@@ -76,12 +77,12 @@ footer {
 
   a {
     text-decoration: underline;
-  
+
     &:hover {
       text-decoration: underline;
       color: hsl(0, 0%, 50%);
     }
-  
+
     &:active {
       text-decoration: underline;
       color: hsl(0, 0%, 60%);

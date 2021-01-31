@@ -1,9 +1,14 @@
 {
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "[json]": {
     "editor.quickSuggestions": {
       "strings": true
     },
     "editor.formatOnSave": true
-  }
+  },
+  "spellright.language": [],
+  "spellright.documentTypes": [
+    "latex",
+    "plaintext"
+  ]
 }

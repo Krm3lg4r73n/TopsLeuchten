@@ -1,9 +1,8 @@
 ---
 layout: selection
 category: ground
-title: "On Ground"
-title_img: "/img/title_on_ground.png"
-filename: "selection_ground.html"
+title: "Große TopsLeuchten 1"
+filename: "selection_big_1.html"
 ---
 
 Jede „TopsLeuchte on ground“ ist ein Unikat,

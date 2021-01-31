@@ -1,72 +1,152 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	<meta name="google-site-verification" content="_R-dbAQExdJvfjmhsKCcatA8FIiX7xfh2-rhZ3i5ebk" />
-	<meta name="keywords" content="topsleuchten, czaplinski, tops, leuchten, lampen, peter" />
-	<meta name="author" content="Czaplinski, David" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Poiret+One">
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/includes.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/home.css">
-	<title>TopsLeuchten</title>
-</head>
-<body>
-	<main class="home">
-		{% include flag_link.html locale=page.locale path="" %}
-		<!-- {% include logo.html locale=page.locale %} -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta
+      name="google-site-verification"
+      content="_R-dbAQExdJvfjmhsKCcatA8FIiX7xfh2-rhZ3i5ebk"
+    />
+    <meta
+      name="keywords"
+      content="topsleuchten, czaplinski, tops, leuchten, lampen, peter"
+    />
+    <meta name="author" content="Czaplinski, David" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway|Poiret+One"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="{{ site.baseurl }}/css/includes.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="{{ site.baseurl }}/css/home.css"
+    />
+    <title>TopsLeuchten</title>
+  </head>
+  <body>
+    <main class="home">
+      {% include flag_link.html locale=page.locale path="" %}
+      <!-- {% include logo.html locale=page.locale %} -->
 
-		<img class="home__logo" src="{{ site.baseurl }}/img/logo_neu.png" />
+      <img class="home__logo" src="{{ site.baseurl }}/img/logo_home.png" />
 
-		<!-- <h1>The beauty of light in life</h1> -->
-		<section class="home__video">
-			<div class="responsive-iframe">
-				<iframe width="560" height="315" src="//www.youtube.com/embed/oKIU7pJjzPw?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</section>
-		<section class="home__content">
-			{{ content }}
-		</section>
-		<nav class="home__nav">
-			<div class="link-row">
-				<div class="link-wrapper">
-					<a href="{{ site.baseurl }}/{{ page.locale }}/selection_ground.html">
-						<img src='{{ site.baseurl }}/img/link_on_ground.png' alt="Topsleuchten on Ground"/>
-					</a>
-				</div>
-				<div class="link-wrapper">
-					<a href="{{ site.baseurl }}/{{ page.locale }}/selection_wall.html">
-						<img src='{{ site.baseurl }}/img/link_on_wall.png' alt="Topsleuchten on Wall"/>
-					</a>
-				</div>
-			</div>
-			<div class="link-row">
-				<div class="link-wrapper">
-					<a href="{{ site.baseurl }}/{{ page.locale }}/selection_air.html">
-						<img src='{{ site.baseurl }}/img/link_in_air.png' alt="Topsleuchten in Air"/>
-					</a>
-				</div>
-				<div class="link-wrapper">
-					<a class="overlay-text-container" href="{{ site.baseurl }}/leuchten/{{ page.locale }}/current.html">
-						<img src='{{ site.baseurl }}/img/link_current.png' alt="Current Project"/>
-						<p id="overlay-text-current" class="overlay-text">
-								TopsLeuchten<br />on tour<span class="inset-text">in</span>Pflegeheim<br />und<br />Hospiz
-						</p>
-					</a>
-				</div>
-			</div>
-			<div class="link-wrapper">
-				<a href="{{ site.baseurl }}/{{ page.locale }}/contact.html">
-					<img src='{{ site.baseurl }}/img/link_contact_{{ page.locale }}.png' alt="Contact"/>
-				</a>
-			</div>
-			<div class="link-wrapper">
-				<a href="{{ site.baseurl }}/{{ page.locale }}/press.html">
-					<img src='{{ site.baseurl }}/img/link_press.png' alt="Press"/>
-				</a>
-			</div>
-		</nav>
-		{% include footer.html locale=page.locale %}
-	</main>
-</body>
+      <section class="home__content">{{ content }}</section>
+
+      <article class="feature">
+        <main>
+          <header>Großes Lichtkunsttheater TopsLeuchten</header>
+          <div>
+            <img src="{{ site.baseurl }}/img/feature_1.jpg" />
+          </div>
+          <footer>
+            Austellungen 2016-2018 in Duisburg und Krefeld<br />Seit 2020 auf
+            dem Topshof in KR-Uerdingen
+          </footer>
+        </main>
+        <aside>
+          <div class="responsive-iframe">
+            <iframe
+              width="560"
+              height="315"
+              src="//www.youtube.com/embed/oKIU7pJjzPw?rel=0&showinfo=0"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="responsive-iframe">
+            <iframe
+              width="560"
+              height="315"
+              src="//www.youtube.com/embed/bbi6UHXfiVE?rel=0&showinfo=0"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </aside>
+      </article>
+
+      <article class="feature">
+        <main>
+          <header>Kleines Lichtkunsttheater TopsLeuchten</header>
+          <div>
+            <img src="{{ site.baseurl }}/img/feature_2.jpg" />
+          </div>
+          <footer>
+            Nach Corona wieder unterwegs in Hospizen, Kinderhospizen und
+            Senioren-/Pflegeheimen im Raum NRW
+          </footer>
+        </main>
+        <aside>
+          <div class="responsive-iframe">
+            <iframe
+              width="560"
+              height="315"
+              src="//www.youtube.com/embed/NcDdRMWvMjQ?rel=0&showinfo=0"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </aside>
+      </article>
+
+      <nav class="home__nav">
+        <div class="link-row">
+          <div class="link-wrapper">
+            <a href="{{ site.baseurl }}/{{ page.locale }}/selection_big_1.html">
+              <img
+                src="{{ site.baseurl }}/img/link_big_1.jpg"
+                alt="Große Topsleuchten Teil 1"
+              />
+              <div class="name">Bilder Große TopsLeuchten 1</div>
+            </a>
+          </div>
+          <div class="link-wrapper">
+            <a href="{{ site.baseurl }}/{{ page.locale }}/selection_big_2.html">
+              <img
+                src="{{ site.baseurl }}/img/link_big_2.jpg"
+                alt="Große Topsleuchten Teil 2"
+              />
+              <div class="name">Bilder Große TopsLeuchten 2</div>
+            </a>
+          </div>
+          <div class="link-wrapper">
+            <a
+              class="overlay-text-container"
+              href="{{ site.baseurl }}/leuchten/{{ page.locale }}/small.html"
+            >
+              <img
+                src="{{ site.baseurl }}/img/link_small.jpg"
+                alt="Kleines Lichtkunsttheater"
+              />
+              <div class="name">Bilder Kleine TopsLeuchten</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="link-row">
+          <div class="link-wrapper">
+            <a href="{{ site.baseurl }}/{{ page.locale }}/contact.html">
+              <img
+                src="{{ site.baseurl }}/img/link_contact_{{ page.locale }}.png"
+                alt="Contact"
+              />
+            </a>
+          </div>
+          <div class="link-wrapper">
+            <a href="{{ site.baseurl }}/{{ page.locale }}/press.html">
+              <img src="{{ site.baseurl }}/img/link_press.png" alt="Press" />
+            </a>
+          </div>
+        </div>
+      </nav>
+      {% include footer.html locale=page.locale %}
+    </main>
+  </body>
 </html>

@@ -1,10 +1,30 @@
 ---
 ---
 
-@import 'reset';
-@import 'default';
+@import "reset";
+@import "default";
 
 .selection {
+  &__back-link {
+    align-self: flex-start;
+    margin-top: 1rem;
+
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: currentColor;
+      margin-right: 0.7rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   &__content {
     flex: 1;
     max-width: 60%;
@@ -19,7 +39,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 4rem;
-  
+
     a {
       width: 100%;
       max-width: 300px;
@@ -49,7 +69,7 @@
         text-align: center;
         font-size: larger;
         font-weight: bold;
-        font-family: 'Poiret One', sans-serif;
+        font-family: "Poiret One", sans-serif;
       }
     }
   }
