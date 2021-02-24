@@ -20,6 +20,11 @@
 
   transition: box-shadow 0.1s;
 
+  @media (max-width: 850px) {
+    height: calc(1.7rem * 0.75);
+    width: calc(2.75rem * 0.75);
+  }
+
   &:hover {
     border-color: hsl(0, 0%, 50%);
     box-shadow: 0 0 0.1rem 0.1rem hsl(0, 0%, 50%);
