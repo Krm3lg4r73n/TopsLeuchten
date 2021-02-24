@@ -1,8 +1,8 @@
 ---
 ---
 
-@import 'reset';
-@import 'default';
+@import "reset";
+@import "default";
 
 .press {
   &__exhibitions {
@@ -12,18 +12,19 @@
     width: 100%;
 
     img {
-      width: 100%;
+      width: 80%;
       height: auto;
-      border-radius: .2rem;
-      margin: 1rem 0;
+      border-radius: 0.2rem;
+      margin: 1rem auto;
     }
 
     h1 {
       margin-top: 7rem;
+      text-align: center;
     }
 
     h2 {
-      margin-top: 3rem;
+      margin-top: 5rem;
 
       @media (max-width: 850px) {
         font-size: 13pt;
