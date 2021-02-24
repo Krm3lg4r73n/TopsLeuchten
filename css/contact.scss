@@ -1,8 +1,8 @@
 ---
 ---
 
-@import 'reset';
-@import 'default';
+@import "reset";
+@import "default";
 
 .contact {
   &__content {
@@ -12,7 +12,11 @@
     margin: 3rem 0;
     font-size: large;
     line-height: 150%;
-    
+
+    @media (max-width: 850px) {
+      font-size: small;
+    }
+
     p {
       margin-top: 1rem;
       margin-bottom: 1.5rem;

@@ -1,4 +1,5 @@
 ---
 layout: home
 ---
-Eine einzigartige Symbiose von Licht und Musik als nicht kommerzielles Theaterprojekt
+
+Ein soziales, nicht kommerzielles Theaterprojekt aus Krefeld
