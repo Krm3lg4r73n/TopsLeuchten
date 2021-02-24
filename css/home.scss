@@ -88,6 +88,10 @@
         font-size: larger;
         font-weight: bold;
         font-family: "Poiret One", sans-serif;
+
+        @media (max-width: 850px) {
+          font-size: small;
+        }
       }
     }
   }
